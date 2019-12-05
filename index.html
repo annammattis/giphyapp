@@ -39,6 +39,29 @@
     // queryURL for Giphy API
     var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=QTQ2zi6YT1LXmYu8cTtapd86PFrOjdBZ";
 
+    // <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    // <!-- TODO: Add SDKs for Firebase products that you want to use
+    //   https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBb7VZkAV8WmQ9xFaV6EqtgFNUXIq4V6fo",
+      authDomain: "first-firebase-project-2c9cd.firebaseapp.com",
+      databaseURL: "https://first-firebase-project-2c9cd.firebaseio.com",
+      projectId: "first-firebase-project-2c9cd",
+      storageBucket: "first-firebase-project-2c9cd.appspot.com",
+      messagingSenderId: "535484273041",
+      appId: "1:535484273041:web:9a8aebefa4c16d7d274a30",
+      measurementId: "G-N8XRT8SLGN"
+      };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
 
 
   </script>

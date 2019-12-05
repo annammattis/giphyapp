@@ -1,3 +1,20 @@
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyBb7VZkAV8WmQ9xFaV6EqtgFNUXIq4V6fo",
+    authDomain: "first-firebase-project-2c9cd.firebaseapp.com",
+    databaseURL: "https://first-firebase-project-2c9cd.firebaseio.com",
+    projectId: "first-firebase-project-2c9cd",
+    storageBucket: "first-firebase-project-2c9cd.appspot.com",
+    messagingSenderId: "535484273041",
+    appId: "1:535484273041:web:9a8aebefa4c16d7d274a30",
+    measurementId: "G-N8XRT8SLGN"
+    };
+
+
 
 var topics =["The Good Place", "Game of Thrones", "How I Met Your Mother", "Westworld", "Family Guy"];
 
