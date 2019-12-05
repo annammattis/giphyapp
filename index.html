@@ -4,20 +4,43 @@
 <head>
   <meta charset="utf-8">
   <title>Giphy API</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    // Example queryURL for Giphy API
-    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9";
 
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response) {
-      console.log(response);
-    });
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!--this is the area where the buttons will be-->
+        <div id="buttonArea"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <div id="gifArea">
+        where the gifs go
+        </div>
+      </div>
+      <div class="col-4">
+          <!--site application content here-->
+        <form>
+          <input id="searchText" type="text" placeholder="Search for..">
+          <button id="searchGif" type="submit" onclick="getData()">Text</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets\app.js"></script>
+  <script type="text/javascript">
+    // queryURL for Giphy API
+    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=QTQ2zi6YT1LXmYu8cTtapd86PFrOjdBZ";
+
+
+
   </script>
 
 </body>
